@@ -1,0 +1,28 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "HA Boot Manager",
+        "description": "Configure the TCP server that communicates with UEFI boot manager.",
+        "data": {
+          "tcp_port": "TCP Port",
+          "default_os": "Default OS"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "HA Boot Manager is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "HA Boot Manager Options",
+        "data": {
+          "tcp_port": "TCP Port",
+          "default_os": "Default OS"
+        }
+      }
+    }
+  }
+}

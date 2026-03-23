@@ -1,0 +1,11 @@
+set_boot_os:
+  name: Set Boot OS
+  description: Set the OS to boot on next restart.
+  fields:
+    os_name:
+      name: OS Name
+      description: The name of the OS to boot.
+      required: true
+      example: "Ubuntu"
+      selector:
+        text:

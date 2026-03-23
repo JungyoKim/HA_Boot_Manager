@@ -1,0 +1,4 @@
+edk2/
+bundle/
+*.tar.gz
+__pycache__/

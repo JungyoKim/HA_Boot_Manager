@@ -1,0 +1,12 @@
+[Unit]
+Description=Boot Selection TCP Server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/kimjungyo/문서/bootmanager/boot_tcp_server.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

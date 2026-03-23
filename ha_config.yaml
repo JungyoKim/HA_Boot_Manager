@@ -1,0 +1,13 @@
+# HA shell_command 설정
+# configuration.yaml에 추가
+
+shell_command:
+  # Ubuntu 부팅 스크립트 설정
+  set_boot_ubuntu: "echo '#!ipxe\necho Booting Ubuntu...\nsleep 1\nchain \\EFI\\ubuntu\\shimx64.efi || exit' > /config/www/boot.ipxe"
+  
+  # Windows 부팅 스크립트 설정
+  set_boot_windows: "echo '#!ipxe\necho Booting Windows...\nsleep 1\nchain \\EFI\\Microsoft\\Boot\\bootmgfw.efi || exit' > /config/www/boot.ipxe"
+
+# 자동화:
+# input_select.boot_os가 ubuntu로 변경 → shell_command.set_boot_ubuntu
+# input_select.boot_os가 windows로 변경 → shell_command.set_boot_windows
